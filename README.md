@@ -3,11 +3,18 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The constraint propagation technique is an iterative method that when applied in Sudoku tries to minimize the set of possible values for each box.
+The iterative process will stop if for one iteration it is unable to reduce the amount of options for at least one box.
+
+The naked twins technique is one of the available constraint propagation methods to be applied to Sudoku.
+It looks for all pairs of boxes holding a matching pair of values inside a same unit (naked_twins) and then eliminates each of the values from the options of the
+each of the twins common peers.
+
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: In order to implement the diagonal sudoku we just need to define two additional units one for each diagonal line and add them to the unit list so that
+its elements are considered on determining peers for each box.
 
 ### Install
 
